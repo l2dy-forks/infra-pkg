@@ -7,10 +7,11 @@
 # Copyright (C) 2018-2024 Ruohang Feng (rh@vonng.com)
 #==============================================================#
 PACKAGE=garage
-VERSION=2.1.0
+VERSION=2.2.0
 RELEASE_PAGE=https://garagehq.deuxfleurs.fr/download/
-FILENAME=$(PACKAGE)-aarch64-unknown-linux-musl
-WEB_URL=https://garagehq.deuxfleurs.fr/_releases/v$(VERSION)/$(FILENAME)
+FILENAME=$(PACKAGE)
+PLATFORM=aarch64-unknown-linux-musl
+WEB_URL=https://garagehq.deuxfleurs.fr/_releases/v$(VERSION)/$(PLATFORM)/garage
 
 default: all
 all: download extract build clean
