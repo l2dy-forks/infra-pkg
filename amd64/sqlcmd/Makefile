@@ -6,10 +6,10 @@
 # Path      :   Makefile
 # Copyright (C) 2018-2023 Ruohang Feng (rh@vonng.com)
 #==============================================================#
-REPONAME=microsoft/sqlcmd
+REPONAME=microsoft/go-sqlcmd
 PACKAGE=sqlcmd
 VERSION=1.9.0
-RELEASE_PAGE=https://github.com/$(REPONAME)/releases/v$(VERSION)
+RELEASE_PAGE=https://github.com/$(REPONAME)/releases/tag/v$(VERSION)
 DIRNAME=$(PACKAGE)-linux-amd64
 FILENAME=$(DIRNAME).tar.bz2
 WEB_URL=https://github.com/$(REPONAME)/releases/download/v$(VERSION)/$(FILENAME)
