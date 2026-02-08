@@ -7,8 +7,14 @@ arm64/tarball
 amd64/tarball
 noarch/tarball
 tmp/
+.codex/
+.cursor/
 
 arm64/claude
 amd64/ccm
-
+.claude
+CLAUDE.md
 *.tar.gz
+CLAUDE.md
+
+bin/

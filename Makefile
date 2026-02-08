@@ -2,7 +2,7 @@
 # File      :   Makefile
 # Desc      :   pgsty/pkg repo shortcuts
 # Ctime     :   2024-07-28
-# Mtime     :   2024-07-28
+# Mtime     :   2026-02-08
 # Path      :   Makefile
 # Author    :   Ruohang Feng (rh@vonng.com)
 # License   :   AGPLv3
@@ -153,13 +153,12 @@ victoria-traces:
 	cd amd64/victoria-traces && make
 	cd arm64/victoria-traces && make
 grafana_plugins:
-	cd noarch/grafana_plugins && make
+	cd noarch/grafana-plugins && make
 pev2:
 	cd noarch/pev2 && make
 
 kafka:
 	cd amd64/kafka && make
-	cd arm64/kafka && make
 
 grafana-ds:  grafana-infinity-ds grafana-victoriametrics-ds grafana-victorialogs-ds
 grafana-infinity-ds:
@@ -210,4 +209,3 @@ npgsqlrest:
 	victoria-metrics victoria-logs pg_timetable duckdb etcd mtail ferretdb sqlcmd tigerbeetle kafka v2ray \
 	ds grafana-infinity-ds grafana-victoriametrics-ds grafana-victorialogs-ds timescaledb-tools timescaledb-event-streamer \
 	restic juicefs dblab garage seaweedfs rustfs uv claude asciinema hugo caddy headscale grafana_plugins pev2 opencode golang nodejs postgrest npgsqlrest
-

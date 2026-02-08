@@ -6,6 +6,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This repository builds RPM and DEB packages for the Pigsty observability stack (Prometheus, Grafana ecosystem, VictoriaMetrics, exporters, and related tools). Packages are built for both `amd64` (x86_64) and `arm64` (aarch64) architectures.
 
+## Update SOP (Read This First)
+
+For any package update work (version discovery, proxy downloads, tarball caching, Makefile/nFPM bumps, building, artifact verification, README + external docs updates), follow:
+
+- `tmp/SOP.md`
+
 ## Build Commands
 
 Build all packages for both architectures:
@@ -65,10 +71,14 @@ Each package follows a consistent structure under `{arch}/{package}/`:
 Packages use [nFPM](https://nfpm.goreleaser.com/) for building both RPM and DEB from a single configuration.
 
 ### Adding/Updating a Package
-1. Update `VERSION` in the package's Makefile
-2. Run `make link` to verify the download URL
-3. Run `make` to build (or `make get` to just download and extract)
-4. Commit version bump
+Follow `tmp/SOP.md`.
+
+At a minimum:
+1. Confirm upstream latest version (and tag naming rules)
+2. Download artifacts through proxy into `amd64/tarball/` + `arm64/tarball/` (and `noarch/tarball/` if needed)
+3. Update versions in `Makefile` + `nfpm*.yaml`
+4. Build and verify output versions/architectures
+5. Update README + external docs release notes
 
 ### Sync with Build Server
 ```bash
