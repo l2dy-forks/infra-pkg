@@ -8,11 +8,11 @@
 #==============================================================#
 REPONAME=tigerbeetle/tigerbeetle
 PACKAGE=tigerbeetle
-VERSION=0.16.68
-RELEASE_PAGE=https://github.com/$(REPONAME)/releases/v$(VERSION)
+VERSION=0.16.70
+RELEASE_PAGE=https://github.com/$(REPONAME)/releases/tag/$(VERSION)
 DIRNAME=$(PACKAGE)-aarch64-linux
 FILENAME=$(DIRNAME).zip
-WEB_URL=https://github.com/$(REPONAME)/releases/download/v$(VERSION)/$(FILENAME)
+WEB_URL=https://github.com/$(REPONAME)/releases/download/$(VERSION)/$(FILENAME)
 
 default: all
 all: download extract build clean
