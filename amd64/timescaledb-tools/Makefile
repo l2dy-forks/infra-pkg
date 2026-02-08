@@ -6,11 +6,11 @@
 # Path      :   Makefile
 # Copyright (C) 2018-2024 Ruohang Feng (rh@vonng.com)
 #==============================================================#
-REPONAME=https://github.com/timescale/timescaledb-tune
+REPONAME=timescale/timescaledb-tune
 PACKAGE=timescaledb-tools
-VERSION=0.18.1
-RELEASE_PAGE=https://github.com/$(REPONAME)/releases/v$(VERSION)
-DIRNAME=$(PACKAGE)-v$(VERSION).linux-arm64
+VERSION=0.18.2
+RELEASE_PAGE=https://github.com/$(REPONAME)/releases/tag/v.$(VERSION)
+DIRNAME=$(PACKAGE)-v$(VERSION).linux-amd64
 FILENAME1=timescaledb-tune
 FILENAME2=timescaledb-parallel-copy
 
