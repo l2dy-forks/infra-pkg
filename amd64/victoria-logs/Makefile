@@ -8,12 +8,12 @@
 #==============================================================#
 REPONAME=VictoriaMetrics/VictoriaLogs
 PACKAGE=victoria-logs
-VERSION=1.43.1
-RELEASE_PAGE=https://github.com/$(REPONAME)/releases/v$(VERSION)
+VERSION=1.45.0
+RELEASE_PAGE=https://github.com/$(REPONAME)/releases/tag/v$(VERSION)
 FILENAME1=victoria-logs-linux-amd64-v$(VERSION).tar.gz
 FILENAME2=vlutils-linux-amd64-v$(VERSION).tar.gz
-WEB_URL1=https://github.com/$(REPONAME)/releases/download/v$(VERSION)-victorialogs/$(FILENAME1)
-WEB_URL2=https://github.com/$(REPONAME)/releases/download/v$(VERSION)-victorialogs/$(FILENAME2)
+WEB_URL1=https://github.com/$(REPONAME)/releases/download/v$(VERSION)/$(FILENAME1)
+WEB_URL2=https://github.com/$(REPONAME)/releases/download/v$(VERSION)/$(FILENAME2)
 
 
 default: all
